@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omarchy-mixer"
+version = "0.1.0"
+description = "Native PipeWire/PulseAudio mixer for Omarchy"
+requires-python = ">=3.11"
+# PyGObject/GTK4 are system packages (python-gobject, gtk4); not pip dependencies.
+dependencies = []
+
+[project.scripts]
+omarchy-mixer = "omarchy_mixer.app:main"
+
+[tool.setuptools]
+packages = ["omarchy_mixer"]
