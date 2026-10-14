@@ -13,7 +13,7 @@ from . import omarchy  # noqa: E402
 from .theme import ThemeManager  # noqa: E402
 from .window import MainWindow  # noqa: E402
 
-APP_ID = "dev.omarchy.mixer"
+APP_ID = "dev.signaldirective.tacoma"
 APP_NAME = "TACOMA"
 APP_VERSION = "0.1.0"
 APP_ICON = "audio-volume-high"
