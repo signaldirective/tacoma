@@ -3,15 +3,15 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "omarchy-mixer"
+name = "tacoma"
 version = "0.1.0"
-description = "Native PipeWire/PulseAudio mixer for Omarchy"
+description = "TACOMA — Theme Aware Comprehensive Omarchy Mixer Application"
 requires-python = ">=3.11"
 # PyGObject/GTK4 are system packages (python-gobject, gtk4); not pip dependencies.
 dependencies = []
 
 [project.scripts]
-omarchy-mixer = "omarchy_mixer.app:main"
+tacoma = "tacoma.app:main"
 
 [tool.setuptools]
-packages = ["omarchy_mixer"]
+packages = ["tacoma"]

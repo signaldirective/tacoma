@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
 Name=TACOMA
-Comment=Native PipeWire/PulseAudio mixer (Theme Aware Comprehensive Omarchy Mixer Application)
-Exec=/home/ro/Projects/omarchy-mixer/run.sh
+Comment=Theme Aware Comprehensive Omarchy Mixer Application
+Exec=/home/ro/Projects/tacoma/run.sh
 Terminal=false
 Categories=AudioVideo;Audio;Mixer;
 Keywords=audio;volume;pipewire;pulseaudio;mixer;pavucontrol;omarchy;tacoma;

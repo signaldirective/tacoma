@@ -81,7 +81,7 @@ def main(argv: list[str] | None = None) -> int:
         print()
         print("A native PipeWire/PulseAudio mixer for Omarchy.")
         print()
-        print("Usage: omarchy-mixer [--version] [--help]")
+        print("Usage: tacoma [--version] [--help]")
         return 0
 
     GLib.set_application_name(APP_NAME)

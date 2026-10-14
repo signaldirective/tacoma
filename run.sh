@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Launch the Omarchy PipeWire/PulseAudio mixer.
+# Launch TACOMA (Theme Aware Comprehensive Omarchy Mixer Application).
 set -euo pipefail
 cd "$(dirname "$0")"
-exec python3 -m omarchy_mixer "$@"
+exec python3 -m tacoma "$@"

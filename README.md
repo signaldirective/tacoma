@@ -35,7 +35,7 @@ no API, no cost.
 From the source tree:
 
 ```sh
-~/Projects/omarchy-mixer/run.sh
+~/Projects/tacoma/run.sh
 ```
 
 ## Install as a single file
@@ -44,24 +44,24 @@ Build a self-contained executable (a Python zipapp — one file, no pip, no
 dependencies to install):
 
 ```sh
-./build.sh              # -> dist/omarchy-mixer
-./build.sh --install    # -> ~/.local/bin/omarchy-mixer
+./build.sh              # -> dist/tacoma
+./build.sh --install    # -> ~/.local/bin/tacoma
 ```
 
 Then just:
 
 ```sh
-omarchy-mixer
+tacoma
 ```
 
-The artifact is a single ~12 KB file. Copy it anywhere on `$PATH`;
+The artifact is a single ~16 KB file. Copy it anywhere on `$PATH`;
 `~/.local/bin` is already on the Omarchy `PATH`. It reports its version:
 
 ```sh
-omarchy-mixer --version
+tacoma --version
 ```
 
-To uninstall, delete `~/.local/bin/omarchy-mixer`.
+To uninstall, delete `~/.local/bin/tacoma`.
 
 ### It is not a static binary
 
@@ -89,11 +89,11 @@ pipx install .
 ## Design
 
 ```
-omarchy_mixer/
+tacoma/
   audio.py    pactl wrapper: JSON listing, control commands, `pactl subscribe` watcher
-  rows.py     DeviceRow / StreamRow widgets (debounced volume writes)
+  rows.py     DeviceRow / CardRow / StreamRow widgets (debounced volume writes)
   window.py   sections, live refresh, error banner
-  theme.py    palette -> GtkCssProvider (accent badge)
+  theme.py    palette -> GtkCssProvider + file-monitor auto-refresh
   omarchy.py  theme name + palette (shared resolver, tomllib fallback)
   app.py      Gtk.Application
 ```

@@ -35,7 +35,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self._rows: dict[str, list[Gtk.Widget]] = {}
         self._placeholders: dict[str, Gtk.Label | None] = {}
 
-        self.set_title("Audio")
+        self.set_title("TACOMA")
         self.set_default_size(820, 760)
         self._build()
         self.reload()
@@ -45,7 +45,7 @@ class MainWindow(Gtk.ApplicationWindow):
     # -- construction ----------------------------------------------------- #
     def _build(self) -> None:
         header = Gtk.HeaderBar()
-        title = Gtk.Label(label="Audio")
+        title = Gtk.Label(label="TACOMA")
         title.add_css_class("title")
         header.set_title_widget(title)
 
